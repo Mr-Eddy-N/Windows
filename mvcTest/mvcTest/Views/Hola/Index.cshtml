@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<head>
+    <title>Biblioteca</title>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/Biblioteca.js"></script>
+</head>
+<body ng-app="Biblioteca">
+    
+        
+        <form ng-controller="Alta">
+            <fieldset>
+                <legend>Formulario de Envio</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" ng-model="Form.Nombre" id="Nombre" /><br />
+                <label for="Autor">Autor:</label>
+                <input type="text" ng-model="Form.Autor" id="Autor" /><br />
+                <label for="ISBN">ISBN:</label>
+                <input type="text" ng-model="Form.ISBN" id="ISBN" /><br />
+                <label for="Comentarios">Comentarios:</label>
+                <textarea ng-model="Form.Comentarios" id="Comentarios"></textarea><br />
+                <button ng-click="SetData()">Guardar</button>
+            </fieldset>
+    </form>
+
+</body>
+</html>
